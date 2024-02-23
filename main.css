@@ -1,0 +1,132 @@
+html {
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+body.is-active {
+    opacity: 0.5;
+}
+
+.flex-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.desktop-image--left,
+.desktop-image--right,
+.tablet-image--left,
+.tablet-image--right,
+.mobile-image--left,
+.mobile-image--right {
+    display: none;
+    filter: brightness(0.7);
+}
+
+.desktop-image--left,
+.desktop-image--right {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tablet-image--left,
+.tablet-image--right {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.mobile-image--left,
+.mobile-image--right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    max-height: 70%;
+    text-align: left;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+}
+
+.text-overlay {
+    white-space: nowrap; 
+    background-color: none;
+    padding: 0vw;
+    font-size: 4vw;
+    color: white;
+    z-index: 2; 
+    font-family: 'Compagnon';
+}
+
+@media screen and (max-width: 499px) {
+    .mobile-image--left,
+    .mobile-image--right {
+        display: block;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .text-overlay {
+        font-size: 6vw;
+    }
+
+    .text-container{
+        bottom: 12%;
+        right: 5%; 
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 949px) {
+    .tablet-image--left,
+    .tablet-image--right {
+        display: block;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .text-overlay {
+        font-size: 3.7vw;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .desktop-image--left,
+    .desktop-image--right {
+        display: block;
+    }
+
+    .text-overlay {
+        font-size: 1.8vw;
+    }
+
+    .text-container{
+        bottom: 35%;
+        right: 5%; 
+    }
+}
+
+@font-face {
+    font-family: 'Compagnon';
+    src: url('/assets/Compagnon-Bold.woff') format('woff'),
+        url('assets/Compagnon-Bold.woff2') format('woff2');
+}
