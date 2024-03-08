@@ -5,27 +5,120 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inital-scale=1">
 
-        <title>media tunnel</title>
+        <title>film strip</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-wMIp1FUlx/nAjo5ff77YO9s9cTj3FPWp5y9tJ97aQfmVdpVc8wb3JNDriwBq/6c7q5ecN8hIhwWcLZRtIvEeeAg==" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="./reset.css">
         <link rel="stylesheet" type="text/css" href="./main.css">
     </head>
 
     <body>
         <main>
-            <div class="flex-container">
-                <img class="desktop-image--left" src="./assets/1.1.jpg" alt="kids having fun">
-                <img class="desktop-image--right" src="./assets/1.2.jpg" alt="young memories">
-                <img class="tablet-image--left" src="./assets/2.1.jpg" alt="daydreaming">
-                <img class="tablet-image--right" src="./assets/2.2.jpg" alt="holding hands">
-                <img class="mobile-image--left" src="./assets/3.1.jpg" alt="moment">
-                <img class="mobile-image--right" src="./assets/3.2.jpg" alt="blurry">
-            </div>
-            <div class="text-container">
-                <div class="text-overlay">I guess when you're young, 
-                    <br>you just believe there'll be many people 
-                    <br>with whom you'll connnect with. 
-                    <br> Later in life, you realize it only happens a few times.</div> 
+           <div class="flex-container">
+                <div class="flex-item toggle-container">
+                    <audio id="moonRiverAudio" src="./assets/Moon River.mp3"></audio>
+                    <button class="toggle" data-type="SONG">MOON RIVER</button>
+                    <button class="toggle" data-type="HOLLY">HOLLY</button>
+                    <button class="toggle" data-type="PAUL">PAUL</button>
+                    <p class="info">From Breakfast At Tiffany's (1961).</p>
+                </div>
+                <div class= "flex-item grid-container">
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/1.png">
+                        <div class="text">[A FLOOR LITTERED WITH MESSY CRUMPLED UP PAPER FILLS THE SCENE. "MOON RIVER" STARTS PLAYING IN THE BACKGROUND.]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/2.png">
+                        <div class="text">[PAUL IS DRAFTING A NEW NOVEL ATTEMPT ON A TYPEWRITER.]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/3.png">
+                        <div class="text">[HE TYPES A STORY INSPIRED BY HOLLY GOLIGHTLY.]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/4.png">
+                        <div class="text">THERE WAS ONCE A VERY LOVELY, VERY FRIGHTENED GIRL. SHE LIVED ALONE EXCEPT FOR A NAMELESS CAT.</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/5.png">
+                        <div class="text">[PAUL LOOKS TO WHERE THE SONG IS COMING FROM, OUTSIDE THE WINDOW.]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/6.png">
+                        <div class="text">[PAUL LOOKS ONTO THE FIRE ESCAPE WHERE HOLLY GOLIGHTLY IS SINGING "MOON RIVER".]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/7.png">
+                        <div class="text">[PAUL SMILES.]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/8.png">
+                        <div class="text">[🎵]</div>
+                     </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/9.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/10.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/11.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/12.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/13.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/14.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/15.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/16.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/17.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/18.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/19.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/20.png">
+                        <div class="text">[🎵]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/21.png">
+                        <div class="text">[THE CAMERA CUTS TO PAUL, WHO IS SMILING FONDLY.]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/22.png">
+                        <div class="text">[HOLLY FINISHES THE SONG AND SEES PAUL.]</div>
+                    </div>
+                    <div class="grid-item" data-type="HOLLY">
+                        <img src="./assets/23.png">
+                        <div class="text">HI.]</div>
+                    </div>
+                    <div class="grid-item" data-type="PAUL">
+                        <img src="./assets/24.png">
+                        <div class="text">HI.</div>
+                    </div>
+                </div>
             </div>
 
         </main>
